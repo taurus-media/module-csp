@@ -26,7 +26,8 @@ class CspWhitelistXmlConverterPlugin
         'connect-src',
         'media-src',
         'font-src',
-        'frame-src'
+        'frame-src',
+        'form-action'
     ];
 
     /**
