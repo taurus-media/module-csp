@@ -25,7 +25,8 @@ class CspWhitelistXmlConverterPlugin
         'img-src',
         'connect-src',
         'media-src',
-        'font-src'
+        'font-src',
+        'frame-src'
     ];
 
     /**
