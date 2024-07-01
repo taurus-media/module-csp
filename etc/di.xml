@@ -13,4 +13,7 @@
         <plugin name="Yireo_CspWhitelistInlineJs::addCspInlineScripts" disabled="true"/>
         <plugin name="Taurus_Csp::addCspInlineScripts" type="Taurus\Csp\Plugin\AddCspInlineScripts"/>
     </type>
+    <type name="Magento\Framework\View\Page\Config\Renderer">
+        <plugin name="Taurus_Csp::addCspInlineScriptsToHead" type="Taurus\Csp\Plugin\AddCspInlineScriptsToHead"/>
+    </type>
 </config>
