@@ -9,4 +9,8 @@
     <type name="Magento\Csp\Model\Collector\CspWhitelistXml\Converter">
         <plugin name="taurus-whitelist-domains" type="Taurus\Csp\Plugin\CspWhitelistXmlConverterPlugin" />
     </type>
+    <type name="Magento\Framework\View\Element\Template">
+        <plugin name="Yireo_CspWhitelistInlineJs::addCspInlineScripts" disabled="true"/>
+        <plugin name="Taurus_Csp::addCspInlineScripts" type="Taurus\Csp\Plugin\AddCspInlineScripts"/>
+    </type>
 </config>
