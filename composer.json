@@ -1,6 +1,6 @@
 {
   "name": "taurus/module-csp",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "CSP whitelisting improvements",
   "type": "magento2-module",
   "require": {

@@ -39,7 +39,7 @@ class AddCspInlineScripts
     {
         $scripts = $this->scriptFinder->find($html);
         foreach ($scripts as $fullScript => $inlineJs) {
-            $newScript = $this->secureHtmlRendererStub->renderTag('script', [], $inlineJs, false);
+            $newScript = $this->secureHtmlRenderer->renderTag('script', [], $inlineJs, false);
             $html = str_replace($fullScript, $newScript, $html);
         }
 
