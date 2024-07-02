@@ -13,9 +13,9 @@ class Data extends AbstractHelper
     const XML_PATH_WHITELIST_DOMAINS = 'csp/whitelist/domains';
 
     /**
-     * Get whiltelisted domains from admin config
+     * Get whitelisted domains from admin config
      *
-     * @return array
+     * @return string[]
      */
     public function getTrustedDomains()
     {

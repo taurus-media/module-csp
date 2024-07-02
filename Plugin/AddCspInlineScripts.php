@@ -1,4 +1,8 @@
-<?php declare(strict_types=1);
+<?php
+/**
+ * Copyright (c) 2024. Taurus. All rights reserved
+ * @author Alex Tolochko
+ */
 
 namespace Taurus\Csp\Plugin;
 
