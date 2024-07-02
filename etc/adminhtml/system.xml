@@ -8,9 +8,40 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <section id="csp">
-            <group id="whitelist" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="policies" translate="label" sortOrder="20" showInDefault="10" showInWebsite="0" showInStore="0">
+                <label>Policies</label>
+                <group id="storefront_checkout_index_index" translate="label" sortOrder="10" showInDefault="10" showInWebsite="0" showInStore="0">
+                    <label>Storefront > One Page Checkout</label>
+                    <group id="scripts" translate="label" sortOrder="10" showInDefault="10" showInWebsite="0" showInStore="0">
+                        <label>Scripts</label>
+                        <field id="inline" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                            <label>Allow Inline Scripts</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        </field>
+                        <field id="event_handlers" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                            <label>Allow Event Handlers</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        </field>
+                    </group>
+                </group>
+                <group id="admin_sales_order_create_index" translate="label" sortOrder="10" showInDefault="10" showInWebsite="0" showInStore="0">
+                    <label>Admin > Create Order</label>
+                    <group id="scripts" translate="label" sortOrder="10" showInDefault="10" showInWebsite="0" showInStore="0">
+                        <label>Scripts</label>
+                        <field id="inline" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                            <label>Allow Inline Scripts</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        </field>
+                        <field id="event_handlers" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                            <label>Allow Event Handlers</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        </field>
+                    </group>
+                </group>
+            </group>
+            <group id="whitelist" translate="label" sortOrder="30" showInDefault="10" showInWebsite="0" showInStore="0">
                 <label>Whitelist</label>
-                <field id="domains" translate="label" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="domains" translate="label" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
                     <label>Trusted Domains</label>
                     <comment>One domain per line. Wildcards allowed (E.g.: *.google.com)</comment>
                 </field>
