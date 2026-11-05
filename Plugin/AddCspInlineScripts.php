@@ -8,7 +8,7 @@ namespace Taurus\Csp\Plugin;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Helper\SecureHtmlRenderer;
-use Yireo\CspWhitelistInlineJs\Util\ScriptFinder;
+use Taurus\Csp\Util\ScriptFinder;
 
 class AddCspInlineScripts
 {
