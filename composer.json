@@ -8,7 +8,7 @@
     "yireo/magento2-csp-whitelist-inline-js": "*"
   },
   "license": [
-    "Proprietary"
+    "MIT"
   ],
   "autoload": {
     "files": [
